@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plumeria Reinigung - Final Flyer (A5)</title>
+    <title>Plumeria Reinigung - Match Flyer with Logo (A5)</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -61,10 +61,17 @@
             z-index: 5;
         }
 
-        .logo-icon {
-            color: var(--light-green);
-            font-size: 13mm;
-            margin-bottom: 1mm;
+        /* 🖼️ الحاوية المخصصة اللوغو الجديد */
+        .logo-img-box {
+            height: 14mm; /* ارتفاع متناسق للوغو */
+            margin-bottom: 2mm; /* مسافة قبل الاسم */
+        }
+
+        .logo-img-box img {
+            height: 100%;
+            width: auto;
+            object-fit: contain;
+            display: block;
         }
 
         .logo-title {
@@ -297,7 +304,9 @@
 
 <div class="flyer-page" id="front-page">
     <div class="top-banner">
-        <i class="fa-solid fa-clover logo-icon"></i>
+        <div class="logo-img-box">
+            <img src="logo.png" alt="Plumeria Logo" onerror="this.src='https://placehold.co/200x200/1d2a55/8bc655?text=Logo+fehlt';">
+        </div>
         <div class="logo-title">Plumeria<br><span>Reinigung</span></div>
     </div>
     
